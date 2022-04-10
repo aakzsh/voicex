@@ -40,7 +40,7 @@ html{
             /* opacity: 0.8; */
             position: absolute;
             top: 0;
-            width: 20rem;
+            width: 25rem;
             display: none;
         }
         .title{
@@ -54,6 +54,9 @@ html{
             margin-left: 1rem;
             font-size: 1.5rem;
         }
+.content p{
+    cursor: pointer;
+}
     </style>
     <div class="navbody" >
 <div
@@ -71,11 +74,11 @@ html{
 
 
 <div class="content">
-<p>home</p>
-<p>donate</p>
-<p>success stories</p>
-<p>privacy policy</p>
-<p>help</p>
+<p onclick="window.location.href='/home'">home</p>
+<p onclick="window.location.href='/about'">about</p>
+<p  onclick="window.location.href='/stories'">success stories</p>
+<p onclick="window.location.href='/privacy'">privacy policy</p>
+<p onclick="window.location.href='/help'">help</p>
 
 </div>
     </div>

@@ -14,13 +14,22 @@ def index():
 def home():
     return render_template('home.html')
 
-@app.route('/donate')
-def donate():
-    return render_template('donate.html')
 
 @app.route('/stories')
 def stories():
     return render_template('stories.html')
+
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
+
+@app.route('/help')
+def help():
+    return render_template('help.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,3 +1,4 @@
+{% include 'navbar.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +11,94 @@
     
 </head>
 <body>
-    {% include 'navbar.html' %}
-    <br><br><br><br>
-    <h1>hemlooooooooooooooooooooooooooooooooooooooo</h1>
+    <style>
+.content{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
 
-    {% include 'footer.html' %}
+.semi1{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+     height: 300px;
+     background: #7F82D8;
+
+     border-radius: 0 0 0 300px;
+     -moz-border-radius: 0 0 0 300px;
+     -webkit-border-radius: 0 0 0 300px;
+    
+}
+
+.semi2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+     height: 300px;
+     background: #7F82D8;
+
+     border-radius: 0 300px 0 0;
+     -moz-border-radius: 0 300px 0 0;
+     -webkit-border-radius: 0 300px 0 0;
+}
+
+.two{
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+
+}
+.two-child{
+    width: 40rem;
+    /* background-color: orange; */
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    cursor: pointer;
+    height: 50px;
+    background-color: #7F82D8;
+    border: none;
+    border-radius: 1rem;
+    min-width: 200px;
+    color: white;
+    font-size: 1.2rem;
+}
+    </style>
+    
+
+    <div class="content">
+        <div class="one">
+            <div class="semi1"></div>
+            <div class="semi2"></div>
+        </div>
+        <div class="two">
+          <div class="two-child">
+           <h1 style="text-align: center; margin-bottom: -4rem; margin-top: -1rem; font-size: 8rem;">VOICE-X</h1>
+            <p style="text-align: center; font-size: 2rem;">be the voice of your community and get it heard</p>
+            <div class="buttons">
+                <button>Get Started</button>
+                <button>Learn More</button>
+            </div>
+          </div>
+          
+        </div>
+        
+    </div>
+
+    
 </body>
 </html>
+
+{% include 'footer.html' %}
+
+
