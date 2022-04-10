@@ -1,0 +1,59 @@
+{% include 'navbar.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="static/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="static/style/style.css">
+    <title>voice-x | New Campaign</title>
+</head>
+<body>
+    <style>
+        
+button{
+    cursor: pointer;
+    height: 50px;
+    background-color: #7F82D8;
+    border: none;
+    border-radius: 0.2rem;
+    min-width: 200px;
+    color: white;
+    font-size: 1.2rem;
+}
+        textarea{
+            height: 60px;
+            min-width: 40%;
+            
+            font-size: 1rem;
+            max-lines: 100;
+        }
+        input{
+            height: 60px;
+            min-width: 40%;
+            
+            font-size: 1rem;
+            max-lines: 100;
+        }
+    </style>
+    <br><br>
+    <h2>Start a new Campaign/Movement</h2>
+    
+   
+    <h3>Enter title</h3>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <br>
+    <h3>Enter description</h3>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <br>
+    <h3>Enter donation money needed (in $)</h3>
+    <input type="number" name="" id="" placeholder="leave blank for none">
+    <br><br>
+<button onclick="window.location.href='/home'">
+    Create
+</button>
+</body>
+</html>
