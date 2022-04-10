@@ -25,33 +25,63 @@
             bottom: 2rem;
             transform: rotate(45deg);
         }
+        .contenty{
+            font-size: 1.5rem;
+            display: flex;
+            width: 90vw;
+            min-height: 15rem;
+padding: 2rem;
+color: white;
+           
+            background-color: rgba(80, 88, 135, 0.2)
+            ;
+            border-radius: 1rem;
+            
+        }
+        .img{
+          height: 15rem;
+          width: 15rem;
+        }
+
+        .stats{
+            display: flex;
+            justify-content: space-between;
+            width: 50vw
+        }
     </style>
 <div class="new" onclick="window.location.href='/new'">
     <img src="static/images/close.png" alt="">
 </div>
 
+    <br><br><br><br>
+
+    
+
+
+    {% for allCam in allCam %}
+
+    <div class="contenty">
+        <div style="min-height: 100%; min-width: fit-content;">
+            <img class="img" src="{{allCam.imgurl}}" alt="">
+        </div>
+                <div>
+            <h3>{{allCam.title}}</h3>
+        <p>{{allCam.desc}}</p>
+        <div class="stats">
+            <div class="up">
+                {{allCam.upvotes}}
+            </div>
+            <div class="donate">
+                $: {{allCam.donation}}/{{allCam.target}}
+            </div>
+        </div>
+        </div>
+            </div>
+
     <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
-    <br><br>
-    <p>hemlo</p>
+    {% endfor %}
+    
+    
 </body>
 </html>
 

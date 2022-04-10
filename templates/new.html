@@ -43,17 +43,25 @@ button{
     
    
     <h3>Enter title</h3>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+<form action="/add" method="POST">
+    <textarea name="title" id="title" cols="30" rows="10"></textarea>
 
     <br>
     <h3>Enter description</h3>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+    <br>
+    <h3>Enter Image URL</h3>
+    <textarea name="imgurl" id="imgurl" cols="30" rows="10"></textarea>
     <br>
     <h3>Enter donation money needed (in $)</h3>
-    <input type="number" name="" id="" placeholder="leave blank for none">
+    
+    <input type="number" name="donation" id="donation" placeholder="leave blank for none">
+    
     <br><br>
-<button onclick="window.location.href='/home'">
+
+<button type="submit">
     Create
 </button>
+</form>
 </body>
 </html>
